@@ -1,0 +1,52 @@
+        <!-- Created by Piatkohlo Volodymyr -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер валют</h1>
+        <p>Перевірте актуальний курс і швидко конвертуйте валюту.</p>
+        
+        <div class="form-group">
+            <input type="number" id="amountInput" placeholder="Введіть суму" />
+        </div>
+        
+        <div class="form-group">
+            <label for="fromCurrency">З:</label>
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="UAH">UAH</option>
+                <option value="GBP">GBP</option>
+            </select>
+            
+            <label for="toCurrency">До:</label>
+            <select id="toCurrency">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        
+        <button onclick="convertCurrency()">Конвертувати</button>
+        
+        <div id="resultContainer" class="result-container hidden">
+            <div id="result" class="result"></div>
+        </div>
+        <div>
+            <footer style="text-align: center; margin-top: 20px;">
+                <p>Created by Piatkohlo Volodymyr</p>
+            </footer>
+            </div>
+    </div>
+    <div>
+    <script src="app.js"></script>
+
+</body>
+</html>
